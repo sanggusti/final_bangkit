@@ -387,16 +387,16 @@ export default class Classify extends Component {
                     size="lg"
                     onClick={this.classifyWebcamImage}
                     isLoading={this.state.isClassifying}
-                    text="Classify"
+                    text="Let's Classify!"
                     loadingText="Classifying..."
                   />
                 </div>
               </Tab>
-              <Tab eventKey="localfile" title="Select Local File">
+              <Tab eventKey="localfile" title="Select Image From Local">
                 <Form.Group controlId="file">
-                  <Form.Label>Select Image File</Form.Label><br />
+                  <Form.Label>Upload your image</Form.Label><br />
                   <Form.Label className="imagelabel">
-                    {this.state.filename ? this.state.filename : 'Browse...'}
+                    {this.state.filename ? this.state.filename : 'Browse'}
                   </Form.Label>
                   <Form.Control
                     onChange={this.handleFileChange}
@@ -423,7 +423,7 @@ export default class Classify extends Component {
                         disabled={!this.state.filename}
                         onClick={this.classifyLocalImage}
                         isLoading={this.state.isClassifying}
-                        text="Classify"
+                        text="Let's Classify!"
                         loadingText="Classifying..."
                       />
                     </div>

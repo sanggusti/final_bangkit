@@ -31,12 +31,12 @@ class App extends Component {
     return (
         <div className="App">
           <Container>
-            <Navbar collapseOnSelect className="app-nav-bar" expand="lg">
-              <Navbar.Brand href="/">What's Fresh and What's Rotten?</Navbar.Brand>
+            <Navbar collapseOnSelect className="app-nav-bar" variant="dark" expand="lg">
+              <Navbar.Brand href="/">What's Fresh & What's Rotten?</Navbar.Brand>
               <Navbar.Toggle aria-controls="basic-navbar-nav" />
               <Navbar.Collapse id="basic-navbar-nav">
-                <Nav className="">
-                  <Link className="nav-link" to="/">Let's Classify</Link>
+                <Nav>
+                  <Link className="nav-link" to="/">Let's Classify!</Link>
                   <Link className="nav-link" to="/about">About</Link>
                 </Nav>
               </Navbar.Collapse>

@@ -8,5 +8,9 @@
 }
 
 .app-nav-bar {
-  background-color: #49494b;
+  background-color: #19B5FE;
+}
+
+.nav-link {
+  font-weight: bold;
 }
