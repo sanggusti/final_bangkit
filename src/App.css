@@ -1,0 +1,16 @@
+.App {
+  margin-top: 15px;
+  text-align: center;
+}
+
+.App .navbar-brand {
+  font-weight: bold;
+}
+
+.app-nav-bar {
+  background-color: #19B5FE;
+}
+
+.nav-link {
+  font-weight: bold;
+}
