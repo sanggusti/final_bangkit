@@ -2,11 +2,9 @@
 
 # What's Fresh & What's Rotten, Offline image classification web app
 
-What's Fresh & What's Rotten is our way to solve problem about fruits classification whether it is rotten or it is fresh (safely can be eaten) using Deep Learning. In this solution, we use ..... (silahkan diisi penjabaran model fixnya seperti apa)
+What's Fresh & What's Rotten is our way to solve problem about fruits classification whether it is rotten or it is fresh (safely can be eaten) using Deep Learning. We do simple CNN to expect some basic performance this simple CNN had in the dataset. Then we improved the model by adding Transfer Learning with ResNet50 as our baseline model.
 
-After creating deep learning models, users typically want to deploy their trained models to be used
-in their applications. There are several ways to do this, and how users do it depends largely on
-their use cases and requirements. One such requirement is the ability to run a model offline in
+After creating deep learning models, there are several ways to deploy models and how users do it depends largely on their use cases and requirements. One such requirement is the ability to run a model offline in
 areas where Internet connectivity may be sparse or nonexistent. To do this, one solution is to
 create native apps for mobile platforms which will package and load a compressed version of their
 models. 
@@ -33,9 +31,15 @@ provide offline capabilities.
 
 ## Flow Deep Learning
 
+Silahkan diisi
+
 ## Key Concepts
 
+Silahkan diisi
+
 ## Steps To Generate Model 
+
+Silahkan diisi
 
 ## Flow Webapp
 
@@ -128,52 +132,13 @@ yarn install
 
 ### 3. Download and convert pre-trained model
 
-For this pattern, we are going to download a MobileNet model. However, any image
+For this pattern, we are going to use our model. However, any image
 classification model can be used including any custom made ones. You just have to be able to
 convert it with `tfjs-converter`.
 
 The `tfjs-converter` library can convert models that are in formats such as TensorFlow SavedModel and Keras
 HDF5. More information about converting Python models to a web-friendly format can be found
 in the `tfjs-converter` [repository](https://github.com/tensorflow/tfjs/tree/master/tfjs-converter).
-
-Now, let's get our environment set up to use the `tensorflowjs` Python package.
-
-The general recommendation for Python development is to use a virtual environment
-[(venv)](https://docs.python.org/3/tutorial/venv.html). To install and initialize a virtual environment,
-use the `venv` module on Python 3 (you install the virtualenv library for Python 2.7):
-
-```bash
-# Create the virtual environment using Python. Use one of the two commands depending on your Python version.
-# Note, it may be named python3 on your system.
-
-$ python -m venv myenv       # Python 3.X
-$ virtualenv myenv           # Python 2.X
-
-# Now source the virtual environment. Use one of the two commands depending on your OS.
-
-$ source myenv/bin/activate  # Mac or Linux
-$ ./myenv/Scripts/activate   # Windows PowerShell
-```
-
-Install the `tensorflowjs` package.
-```bash
-pip install tensorflowjs
-```
-
-Now let's download the Keras MobileNet model. A simple script has been provided to make sure
-that MobileNet is downloaded in the proper HDF5 format. Just run:
-```bash
-python download_model.py
-```
-
-After this is complete, the current directory should now contain `mobilenet-model.h5`. Let's convert
-it so it can be used in our app:
-```bash
-tensorflowjs_converter --input_format=keras ./mobilenet-model.h5 ./my-model
-```
-
-We now have a `model.json` file and multiple sharded binary files located in `./my-model` that we
-will use in our web app.
 
 ### 4. Setup configuration files
 
@@ -184,8 +149,7 @@ mv ./my-model/* ./public/model/
 ```
 
 In `src/model`, there is a `classes.js` file which lists the possible classes that the model can classify
-for. Since we used a MobileNet model which was trained using ImageNet, we will use the ImageNet
-classes. You can alter this to fit your model if it is different.
+for. You can alter this to fit your model classes.
 
 If deploying the application, change the `API_ENDPOINT` in `src/config.js` to the proper endpoint.
 For development and local testing, leave it as is.
