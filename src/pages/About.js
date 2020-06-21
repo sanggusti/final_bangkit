@@ -10,12 +10,23 @@ export default class Home extends Component {
     return (
       <div className="About container">
         <h1>About</h1>
+        <br></br>
         <p>
-          This is a TensorFlow.js web application where users can classify images selected locally
-          or taken with their device's camera. The app uses TensorFlow.js and a pre-trained model
-          converted to the TensorFlow.js format to provide the inference capabilities.
-          This model is saved locally in the browser using IndexedDB. A service worker is also used
-          to provide offline capabilities.
+          Amazing web application that use magic algorithm that classify fresh and rotten fruits (sadly, it can only classify Apple, Banana, and Orange).
+          Turns out it using Image Classification with TensorFlow.js!
+          This app use our converted TensorFlow.js format CNN model to provide better experience when using this app as PWA and provide offline capabilities.
+          You can use this app to decide which fruits is fresh or rotten and decide which fruit is apple, banana, or orange
+          (in case you hit your head or something, LOL)
+          <br></br>
+          <br></br>
+          This amazing webapp won't be here and produced by itselft without great teamwork from cool person below:
+          <ul>
+            <li><strong>Arief Hirmanto</strong></li>
+            <li><strong>Christina</strong></li>
+            <li><strong>Fahmi Iman Rizki</strong></li>
+            <li><strong>Gusti Triandi Winata</strong></li>
+          </ul>
+          Honorable mention to Bangkit Academy program from Google in collaboration with Gojek, Tokopedia, and Traveloka to provide capable technical talent in Machine Learning.
         </p>
       </div>
     );

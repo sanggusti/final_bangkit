@@ -440,10 +440,21 @@ export default class Classify extends Component {
               <br />
               <ListGroup>
               {this.state.predictions.map((category) => {
+                console.log(category);
+                  if (category.className === 'Fresh Apple' || category.className === 'Fresh Orange' || category.className === 'Fresh Banana') {
+                    return (
+                      <div>
+                        <p>This most likely <strong>{category.className}</strong> with {category.probability}% probability!</p>
+                        <p>You can eat it safely!</p>
+                      </div>
+                    );
+                  }
                   return (
-                    <ListGroup.Item key={category.className}>
-                      <strong>{category.className}</strong> {category.probability}%</ListGroup.Item>
-                  );
+                      <div>
+                        <p>Oh no! This is <strong>{category.className}</strong> with {category.probability}% probability!</p>
+                        <p>You shouldn't eat it!</p>
+                      </div>
+                    );
               })}
               </ListGroup>
             </div>
