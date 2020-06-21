@@ -1,6 +1,6 @@
 [![Build Status](https://api.travis-ci.com/IBM/tfjs-web-app.svg?branch=master)](https://travis-ci.com/IBM/tfjs-web-app)
 
-# Create a progressive web application for offline image classification
+# What's Fresh & What's Rotten, Offline image classification web app
 
 After creating deep learning models, users typically want to deploy their trained models to be used
 in their applications. There are several ways to do this, and how users do it depends largely on
