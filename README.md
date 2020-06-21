@@ -116,17 +116,22 @@ cd final_bangkit
 In the project directory, run:
 
 ```
-yarn install
+npm install
 ```
 
-> **Note**: If you don't have yarn installed, instructions can be found
-  [here](https://yarnpkg.com/lang/en/docs/install/). You can alternatively use `npm`.
+> **Note**: If you don't have npm installed, instructions can be found
+  [here](https://www.npmjs.com/get-npm). You can alternatively use `yarn`.
 
 ### 3. Download and convert pre-trained model
 
 For this pattern, we are going to use our model. However, any image
 classification model can be used including any custom made ones. You just have to be able to
 convert it with `tfjs-converter`.
+
+You can access via command line by using:
+```
+tensorflowjs_converter --input_format=keras ./your-model.h5 ./destination-directory
+```
 
 The `tfjs-converter` library can convert models that are in formats such as TensorFlow SavedModel and Keras
 HDF5. More information about converting Python models to a web-friendly format can be found
