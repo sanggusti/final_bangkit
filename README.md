@@ -2,15 +2,16 @@
 
 # What's Fresh & What's Rotten, Offline image classification web app
 
+What's Fresh & What's Rotten is our way to solve problem about fruits classification whether it is rotten or it is fresh (safely can be eaten) using Deep Learning. In this solution, we use ..... (silahkan diisi penjabaran model fixnya seperti apa)
+
 After creating deep learning models, users typically want to deploy their trained models to be used
 in their applications. There are several ways to do this, and how users do it depends largely on
 their use cases and requirements. One such requirement is the ability to run a model offline in
 areas where Internet connectivity may be sparse or nonexistent. To do this, one solution is to
 create native apps for mobile platforms which will package and load a compressed version of their
-models. However, this has the overhead of needing developers with expertise in Android and iOS
-development.
+models. 
 
-Here, we go over an alternative, easier way to satisfy this offline mobile
+We choose an alternative to satisfy this offline mobile
 requirement by
 creating a [progressive web application](https://developers.google.com/web/progressive-web-apps/)
 with our model using React and TensorFlow.js. Progressive web applications (PWAs) give a native
@@ -30,7 +31,13 @@ provide offline capabilities.
 
 ![architecture](doc/images/arch-diagram.png)
 
-## Flow
+## Flow Deep Learning
+
+## Key Concepts
+
+## Steps To Generate Model 
+
+## Flow Webapp
 
 1. A pre-trained Keras/TensorFlow model is converted to the TensorFlow.js web friendly format and
    integrated with app.
@@ -49,11 +56,8 @@ provide offline capabilities.
 
 ## Featured Technologies
 
-* [Deep Learning](https://developer.ibm.com/technologies/deep-learning/): Subset of AI that uses
+* [Deep Learning](http://deeplearning.net/): Subset of AI that uses
   multi-layers neural networks that learn from lots of data.
-* [Mobile](https://developer.ibm.com/technologies/mobile/): An environment to
- develop apps and enable engagements that are designed specifically for mobile
- users.
 * [Web Development](https://developer.ibm.com/technologies/web-development/): The construction of
   modern web apps using open-standards technologies.
 * [Visual Recognition](https://developer.ibm.com/technologies/vision/): Tag, classify, and train
@@ -87,10 +91,6 @@ pre-trained model, we use a server API endpoint to query the date the model on t
 updated. If the app can hit the endpoint and detects the locally saved model is older than the model on
 the server, the user is given a prompt with the option to update.
 
-## Watch the Video
-
-[![](https://img.youtube.com/vi/DmlI0Dlr6iQ/0.jpg)](https://youtu.be/DmlI0Dlr6iQ)
-
 ## Steps
 
 1. [Clone the repo](#1-clone-the-repo)
@@ -102,16 +102,16 @@ the server, the user is given a prompt with the option to update.
 
 ### 1. Clone the repo
 
-Clone the `tfjs-web-app` locally. In a terminal, run:
+Clone the `final_bangkit` locally. In a terminal, run:
 
 ```
-git clone https://github.com/pvaneck/tfjs-web-app
+git clone <your-url>
 ```
 
 Now go to the cloned repo directory:
 
 ```
-cd tfjs-web-app
+cd final_bangkit
 ```
 
 
@@ -246,10 +246,6 @@ kept simple here. This can be updated with `date > model_info.txt`. If the date 
 locally stored model is before this date, a prompt is given to user with the option to update the model.
 The user can choose to dismiss the update, or if the API call fails, then the locally saved model will
 continue to be used.
-
-#### Deploy on IBM Cloud
-
-Deployment of the production app on the IBM Cloud is easy. Instructions can be found [here](doc/cloud-deploy.md).
 
 #### Using the App
 
