@@ -161,7 +161,7 @@ will only work if you deploy the app in production mode.
 In the project directory, run:
 
 ```
-yarn start-dev
+npm run start-dev
 ```
 
 Runs the app in the development mode.<br />
@@ -176,7 +176,7 @@ The API server is hosted on `http://localhost:5000` by default.
 In the project directory, run:
 
 ```
-yarn build
+npm run build
 ```
 
 Builds the app for production to the `build` folder. It correctly bundles React in production mode
