@@ -29,17 +29,9 @@ provide offline capabilities.
 
 ![architecture](doc/images/arch-diagram.png)
 
-## Flow Deep Learning
-
-Silahkan diisi
-
-## Key Concepts
-
-Silahkan diisi
-
 ## Steps To Generate Model 
 
-Silahkan diisi
+
 
 ## Flow Webapp
 
