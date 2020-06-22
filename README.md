@@ -32,10 +32,35 @@ provide offline capabilities.
 ## Steps To Generate Model 
 
 1. [Download dataset](https://www.kaggle.com/sriramr/fruits-fresh-and-rotten-for-classification)
-2. [Install dependency (optional)] (#2-install-dependency)
+2. Install dependency (optional)
 3. [Open notebook in Colab/Jupyter Notebook](#3-notebook)
-3. [Data preparation](#4-data-preparation)
-4. [Training data](#5-training-data)
+4. [Save model](#4-save-model)
+
+### 1. Dataset
+
+This dataset has 10901 training data and 2698 test data divided into 6 classes:
+1. Fresh apple
+2. Fresh banana
+3. Fresh orange
+4. Rotten apple
+5. Rotten banana
+6. Rotten orange
+
+### 3. Notebook
+
+You can refer to this [notebook](https://github.com/sanggusti/final_bangkit/blob/master/example_model/Final_Project_Bangkit.ipynb) as baseline implementation with Convolutional Neural Network. You can also refer to improvement of this model in this [link 1](https://github.com/sanggusti/final_bangkit/blob/master/example_model/Fresh_and_Rotten_Fruits_Classi.ipynb), [link 2](https://github.com/sanggusti/final_bangkit/blob/master/example_model/rotten_vs_fresh.ipynb), and improvement with [transfer learning with ResNet50](https://github.com/sanggusti/final_bangkit/blob/master/example_model/transfer_learningv2.ipynb)
+
+### 4. Save model
+
+After training, you can save model into Keras hdf5 file by using this command in your notebook:
+```
+model.save(your-model.h5)
+```
+Or you can save it into SavedFormat of TensorFlow using:
+into Keras hdf5 file by using this command in your notebook:
+```
+model.save(your-model)
+```
 
 ## Flow Webapp
 
