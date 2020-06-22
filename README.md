@@ -30,11 +30,11 @@ This dataset has 10901 training data and 2698 test data divided into 6 classes:
 5. Rotten banana
 6. Rotten orange
 
-### 3. Notebook
+### 2. Notebook
 
 You can refer to this [notebook](https://github.com/sanggusti/final_bangkit/blob/master/example_model/Final_Project_Bangkit.ipynb) as baseline implementation with Convolutional Neural Network. You can also refer to improvement of this model in this [link 1](https://github.com/sanggusti/final_bangkit/blob/master/example_model/Fresh_and_Rotten_Fruits_Classi.ipynb), [link 2](https://github.com/sanggusti/final_bangkit/blob/master/example_model/rotten_vs_fresh.ipynb), and improvement with [transfer learning with ResNet50](https://github.com/sanggusti/final_bangkit/blob/master/example_model/transfer_learningv2.ipynb)
 
-### 4. Save model
+### 3. Save model
 
 After training, you can save model into Keras hdf5 file by using this command in your notebook:
 ```
