@@ -31,7 +31,11 @@ provide offline capabilities.
 
 ## Steps To Generate Model 
 
-
+1. [Download dataset](https://www.kaggle.com/sriramr/fruits-fresh-and-rotten-for-classification)
+2. [Install dependency (optional)] (#2-install-dependency)
+3. [Open notebook in Colab/Jupyter Notebook](#3-notebook)
+3. [Data preparation](#4-data-preparation)
+4. [Training data](#5-training-data)
 
 ## Flow Webapp
 
