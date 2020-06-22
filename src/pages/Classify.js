@@ -309,6 +309,7 @@ export default class Classify extends Component {
             <span className="sr-only">Loading...</span>
           </Spinner>
           {' '}<span className="loading-model-text">Loading Model</span>
+          <h6>Please wait patiently, for the first time it will take a little bit longer</h6>
         </Fragment>
       }
 
