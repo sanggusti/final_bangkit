@@ -29,7 +29,7 @@ export default class Home extends Component {
           Honorable mention to Bangkit Academy program from Google in collaboration with Gojek, Tokopedia, and Traveloka to provide capable technical talent in Machine Learning.
         </p>
         <p>
-          You can check this awesome template in this <a href="https://github.com/IBM/tfjs-web-app#3-download-and-convert-pre-trained-model">link</a>
+          You can check this awesome webapp in this <a href="https://github.com/sanggusti/final_bangkit">link</a> and awesome template in this <a href="https://github.com/IBM/tfjs-web-app#3-download-and-convert-pre-trained-model">link</a>
         </p>
       </div>
     );
