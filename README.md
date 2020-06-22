@@ -1,5 +1,7 @@
 # What's Fresh & What's Rotten, Offline image classification web app
 
+### Group BDG-4B
+
 What's Fresh & What's Rotten is our way to solve problem about fruits classification whether it is rotten or it is fresh (safely can be eaten) using Deep Learning. We do simple CNN to expect some basic performance this simple CNN had in the dataset. Then we improved the model by adding Transfer Learning with ResNet50 as our baseline model.
 
 After creating deep learning models, there are several ways to deploy models and how users do it depends largely on their use cases and requirements. One such requirement is the ability to run a model offline in areas where Internet connectivity may be sparse or nonexistent. To do this, one solution is to create native apps for mobile platforms which will package and load a compressed version of their models. 
