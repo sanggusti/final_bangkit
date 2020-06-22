@@ -23,7 +23,7 @@ export default class Home extends Component {
           <ul>
             <li><strong>Arief Hirmanto</strong></li>
             <li><strong>Christina</strong></li>
-            <li><strong>Fahmi Iman Rizki</strong></li>
+            <li><strong>Fahmi Iman Alfarizki</strong></li>
             <li><strong>Gusti Triandi Winata</strong></li>
           </ul>
           Honorable mention to Bangkit Academy program from Google in collaboration with Gojek, Tokopedia, and Traveloka to provide capable technical talent in Machine Learning.
